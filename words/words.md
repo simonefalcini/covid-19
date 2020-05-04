@@ -94,9 +94,8 @@ Si stima che, *all'inizio* di una epidemia di COVID-19, il virus viene trasmesso
 
 [^serial_interval]: “L'intervallo [seriale] medio è stato di 3,96 giorni (95% IC 3,53–4,39 giorni)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Attenzione: gli articoli pubblicati in anetprima non vanno considerati una versione finale)
 
-<!--If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <icon i></icon>, what happens? -->
-
-Se simuliamo questo "raddoppiare ogni 4 giorni" *e nient'altro*, su una popolazione che inizia con solo lo 0,001% di <icon i></icon>, cosa succede?
+<!--If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <span class="nowrap"><icon i></icon>,</span> what happens?-->
+Se simuliamo questo "raddoppiare ogni 4 giorni" *e nient'altro*, su una popolazione che inizia con solo lo 0,001% di <span class="nowrap"><icon i></icon>,</span> cosa succede?
 
 <!--**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])-->
 
@@ -131,9 +130,9 @@ Ma questa simulazione è sbagliata. La crescita esponenziale, grazie a dio, non 
 
 ![](pics/susceptibles.png)
 
-<!--The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, **but the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s.**-->
+<!--The more <span class="nowrap"><icon i></icon>s</span> there are, the faster <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s,</span> **but the fewer <span class="nowrap"><icon s></icon>s</span> there are, the *slower* <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span>**-->
 
-Più <icon i></icon> ci sono, più velocemente i <icon s></icon> diventano <icon i></icon>, **ma meno <icon s></icon> ci sono, più *lentamente* i <icon s></icon> diventano <icon i></icon>.**
+Più <span class="nowrap"><icon i></icon>s</span> ci sono, più velocemente i <span class="nowrap"><icon s></icon>s</span> diventano <span class="nowrap"><icon i></icon>s,</span> **ma meno <span class="nowrap"><icon s></icon>s</span> ci sono, più *lentamente* i <span class="nowrap"><icon s></icon>s</span> diventano <span class="nowrap"><icon i></icon>s.</span>**
 
 <!--How's this change the growth of an epidemic? Let's find out:-->
 
@@ -151,13 +150,12 @@ Questa è la **curva di crescita logistica** "a forma di S". Inizia piano, esplo
 
 Ma questa simulazione è *ancora* sbagliata. Ci stiamo perdendo il fatto che le persone <icon i></icon> Infette ad un certo punto smettono di essere infettivi, sia perché 1) guariscono 2) "guariscono" ma con danni ai polmoni o 3) muoiono.
 
-<!--For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.-->
+<!--For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <span class="nowrap"><icon r></icon>s</span> can't be infected again, and let's pretend – *for now!* – that they stay immune for life.-->
 
-Per semplicità, fingiamo che tutte le persone <icon i></icon> Infette diventano <icon r></icon> Guariti. (Ricorda però che in realtà, alcuni sono morti.) I <icon r></icon> non possono essere infettati di nuovo e fingiamo - *per ora!* - che rimangano immuni a vita.
+Per semplicità, fingiamo che tutte le persone <icon i></icon> Infette diventano <icon r></icon> Guariti. (Ricorda però che in realtà, alcuni sono morti.) I <span class="nowrap"><icon r></icon>s</span> non possono essere infettati di nuovo e fingiamo - *per ora!* - che rimangano immuni a vita.
 
-<!--With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**-->
-
-Si stima che con il COVID-19 rimani <icon i></icon> Infetto per 10 giorni *in media*.[^infectiousness] Ciò significa che alcune persone recuperano prima di 10 giorni, altre dopo. **Ecco cosa vuol dire nel caso di una simulazione che *inizia* con 100% <icon i></icon>:**
+<!--With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <span class="nowrap"><icon i></icon>:</span>**-->
+Si stima che con il COVID-19 rimani <icon i></icon> Infetto per 10 giorni, *in media*.[^infectiousness] Ciò significa che alcune persone recuperano prima di 10 giorni, altre dopo. **Ecco cosa vuol dire nel caso di una simulazione che *inizia* con 100% <span class="nowrap"><icon i></icon>:</span>**
 
 <!--[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.-->
 
@@ -181,9 +179,9 @@ Ora, cosa succede se simuli la crescita logistica a forma di S *con* la guarigio
 
 Scopriamolo.
 
-<b style='color:#ff4040'><!--Red curve-->La curva rossa</b><!-- is *current* cases--> sono i casi *attivi*<icon i></icon>,    
-<b style='color:#999999'><!--Gray curve-->La curva grigia</b><!-- is *total* cases (current + recovered)--> sono i casi *totali* <icon r></icon>),
-<!--starts at just 0.001%--> ed inizia proprio allo 0,001% <icon i></icon>:
+<b style='color:#ff4040'><!--Red curve-->La curva rossa</b><!-- is *current* cases--> sono i casi *attivi*<span class="nowrap"><icon i></icon>,</span>,    
+<b style='color:#999999'><!--Gray curve-->La curva grigia</b><!-- is *total* cases (current + recovered)--> sono i casi *totali* <span class="nowrap"><icon r></icon>),</span>
+<!--starts at just 0.001%--> ed inizia proprio allo 0,001% <span class="nowrap"><icon i></icon>:</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
@@ -211,7 +209,7 @@ la *seconda* idea più importate dell'epidemiologia di base:
 
 **NOTA: le simulazioni usate per guidare le decisioni politiche sono molto, *molto* più sofisticati di questa!** Ma il modello SIR è lo stesso adatto a spiegare i principi generali, anche se si perde le sfumature.
 
-<!---Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.-->
+<!---Actually, let's add one more nuance: before an <icon s></icon> becomes an <span class="nowrap"><icon i></icon>,</span> they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.-->
 
 A dire il vero, aggiungiamo un'altra sfumature: prima che un <icon s></icon> diventi un <icon i></icon>, diventano <icon e></icon> Esposti. Si tratta di quando si ha il virus ma ancora non lo si trasmette - sei infett*o* ma non infett*ivo*.
 
@@ -234,20 +232,20 @@ Per il COVID-19, si stima che tu sia <icon e></icon> infetto-ma-non-infettivo pe
 [^latent]: “Assumendo una distribuzione del periodo di incubazione con media a 5,2 giorni ricavara da uno studio dei primi casi di COVID-19, deduciamo che l'infettività ha inizio 2,3 giorni (IC 95%, 0,8–3,0 giorni) prima dell'inizio dei sintomi” (traduzione: Se i sintomi iniziano al giorno 5, l'infettività inizia 2 giorni prima, ovvero al giorno 3) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
 <!--
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
+<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <span class="nowrap"><icon e></icon>),</span>    
+<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <span class="nowrap"><icon r></icon>):</span>
 -->
 
 <b style='color:#ff4040'>La curva rossa</b><b style='color:#FF9393'>+ rosa</b> sono i casi *attivi* (infettivi <icon i></icon> + esposti <icon e></icon>),    
-<b style='color:#888'>La curva grigia</b> è i casi *totali* (attuali + guariti <icon r></icon>):
+<b style='color:#888'>La curva grigia</b> è i casi *totali* (attuali + guariti <span class="nowrap"><icon r></icon>):</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-<!--Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.-->
+<!--Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <span class="nowrap"><icon e></icon>-to-<icon i></icon>,</span> and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.-->
 
-Non cambia molto! Quanto a lungo resti <icon e></icon> Esposto cambia il rapporto tra <icon e></icon> e <icon i></icon>, e cambia *quando* i casi attuali hanno il picco... ma *l'altezza* del picco, ed i casi totali alla fine rimangono gli stessi.
+Non cambia molto! Quanto a lungo resti <icon e></icon> Esposto cambia il rapporto tra <span class="nowrap"><icon e></icon>-to-<icon i></icon>,</span> e cambia *quando* i casi attuali hanno il picco... ma *l'altezza* del picco, ed i casi totali alla fine rimangono gli stessi.
 
 <!--Why's that? Because of the *first*-most important idea in Epidemiology 101:-->
 
@@ -309,9 +307,9 @@ Nelle nostre simulazione – *sia all'inizio che mediamente* – un <icon i></ic
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-<!--But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)-->
+<!--But remember, the fewer <span class="nowrap"><icon s></icon>s</span> there are, the *slower* <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span> The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)-->
 
-Ma ricorda, meno <icon s></icon> ci sono, più *lentamente* i <icon s></icon> diventano <icon i></icon>. Il numero di riproduzione *effettivo* (R) dipende non solo dal numero di riproduzione *di base* (R<sub>0</sub>), ma *anche* su qaunte persone non sono più <icon s></icon> Suscettibili. (Per esempio, perché guariscono e guadagnano una immunità naturale.)
+Ma ricorda, meno <span class="nowrap"><icon s></icon>s</span> ci sono, più *lentamente* i <span class="nowrap"><icon s></icon>s</span> diventano <span class="nowrap"><icon i></icon>s.</span>. Il numero di riproduzione *effettivo* (R) dipende non solo dal numero di riproduzione *di base* (R<sub>0</sub>), ma *anche* su qaunte persone non sono più <icon s></icon> Suscettibili. (Per esempio, perché guariscono e guadagnano una immunità naturale.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
@@ -333,9 +331,9 @@ Ora, giochiamo di nuovo con il modello SEIR, ma mostriamo R<sub>0</sub>, R nel t
 
 **NOTA: I casi totali *non si fermano* all'immunità di gregge ma vanno oltre!!** E attraversano la soglia *esattamente* nel momento del picco. (Questo succede comunque tu cambi le impostazione – prova pure!)
 
-<!--This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.-->
+<!--This is because when there are more <span class="nowrap">non-<icon s></icon>s</span> than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.-->
 
-Questo perché quando ci sono i <icon s></icon> in numero maggiore della soglia di immunità di gregge, hai che R < 1. E quando R < 1, i nuovi casi smettono di crescere: un picco.
+Questo perché quando ci sono i <span class="nowrap">non-<icon s></icon>s</span> in numero maggiore della soglia di immunità di gregge, hai che R < 1. E quando R < 1, i nuovi casi smettono di crescere: un picco.
 
 <!--**If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:-->
 
@@ -450,7 +448,7 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 [^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**Play with this calculator to see how % of <span class="nowrap">non-<icon s></icon>,</span> handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
 
 [^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
 
@@ -488,7 +486,7 @@ Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <
 
 Oh.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <span class="nowrap"><icon i></icon>)</span> can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
 
 **A lockdown isn't a cure, it's just a restart.**
 
@@ -554,7 +552,7 @@ This is called **contact tracing**. It's an old idea, was used at an unprecedent
 
 [^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
+(It also lets us use our limited tests more efficiently, to find pre-symptomatic <span class="nowrap"><icon i></icon>s</span> without needing to test almost everyone.)
 
 Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
 
@@ -568,7 +566,13 @@ Here's how it works:
 
 ![](pics/dp3t.png)
 
-(& [here's the full comic](https://ncase.me/contact-tracing/))
+([Here's the full comic](https://ncase.me/contact-tracing/). Details about "pranking"/false positives/etc in footnote:[^dp3t_details])
+
+[^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
+
+    False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
+
+    For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
 Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
 
@@ -580,7 +584,7 @@ Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've in
 
 But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
 
-(Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
+(Footnote rant about the confusion between pre-symptomatic vs "true" asymptomatic – "true" asymptomatics are rare:[^rant])
 
 [^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
 
@@ -605,7 +609,7 @@ Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining thei
 
 Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
+We then keep R < 1 until we have a vaccine, which turns susceptible <span class="nowrap"><icon s></icon>s</span> into immune <span class="nowrap"><icon r></icon>s.</span> Herd immunity, the *right* way:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
@@ -654,7 +658,7 @@ You're right. Masks don't stop you from getting sick[^incoming]... they stop you
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the sick person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+To put a number on it: surgical masks *on the infectious person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
 
 However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
 
@@ -688,9 +692,11 @@ Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only 
 
 Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
 
-For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.
+For COVID-19, every extra 1° Celsius (1.8° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 26°C (47°F),[^nyc_heat] so summer will make R drop by ~31%.
 
 [^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+
+[^nyc_heat]: In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
@@ -763,7 +769,7 @@ Ma per il COVID-19 *negli umani*, al 1 Maggio 2020, "per quanto tempo" è la gra
 [^monkeys]: Da [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Avvertenza: Questo articolo è una prestampa e non è stato certificato da esperti (ancora).* Inoltre, per enfatizzare: hanno solo testato la re-infezione 28 giorni dopo.
 
 Per queste simulazioni, diciamo che dura 1 anno.
-**Questa è una simulazione che inizia 100% <icon r></icon>**, con decadimento esponenziale in suscettibili, no immunità <icon s></icon> dopo 1 anno, in *media*, con variabilità:
+**Questa è una simulazione che inizia 100% <span class="nowrap"><icon r></icon>**,</span> con decadimento esponenziale in suscettibili, no immunità <span class="nowrap"><icon s></icon>s</span> dopo 1 anno, in *media*, con variabilità:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
@@ -793,7 +799,7 @@ Fortunatamente, dato che l'estate riduce R, la situazione migliorerà:
 
 Oh.
 
-Al contrario di quanto si pensi, l'estate rende i picchi peggiori *e* regolari! Questo perchè l'estate riducei i nuovi <icon i></icon>s, che di conseguenza riduce i nuovi <icon r></icon> immuni. Questo significa che l'immunità precipita in estate, *creando* larghi picchi regolari in inverno.
+Al contrario di quanto si pensi, l'estate rende i picchi peggiori *e* regolari! Questo perchè l'estate riducei i nuovi <span class="nowrap"><icon i></icon>s,</span> che di conseguenza riduce i nuovi <span class="nowrap"><icon r></icon></span> immuni. Questo significa che l'immunità precipita in estate, *creando* larghi picchi regolari in inverno.
 
 Fortunatamente, la soluzione è abbastanza diretta - basta vaccinare le persone ogni autunno/inverno, come facciamo per l'influenza:
 
