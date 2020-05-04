@@ -745,53 +745,53 @@ So now, let's plan for some *worse* worst-case scenarios. Water landing, get you
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>I prossimi anni</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+Prendi il COVID-19 e guarisci. Oppure ti vaccini per il COVID-19. In ogni caso, ora sei immune...
 
-...*for how long?*
+...*per quanto tempo?*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* COVID-19 è molto simile alla SARS, che rende immuni i sopravvissuti per 2 anni.[^SARS immunity]
+* I coronavirus che causano "l'influenza comune" danno circa 8 mesi di immunità.[^cold immunity]
+* Ci sono casi di pazienti guariti dal COVID-19 risultati positivi di nuovo, ma non è chiaro se sono dei falsi positivi.[^unclear]
+* Uno studio sulle scimmie *non-ancora-verificato* ha mostrato che l'immunità al COVID-19 dura almeno 28 giorni.[^monkeys]
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+Ma per il COVID-19 *negli umani*, al 1 Maggio 2020, "per quanto tempo" è la grande incognita.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS immunity]: “Anticorpi SARS-specifici sono rimasti per una media di 2 anni [...] Quindi i pazienti SARS potrebbero essere suscettibili ad una reinfezione ≥3 anni dopo la prima esposizione.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Purtroppo" non sapremo mai quanto sarebbe durata l'immunità alla SARS perchè si è estinta troppo velocemente.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold immunity]: “Non abbiamo trovato differenze significative tra la probabilità di risultare positivi almeno una volta e la probabilità di una ricomparsa per i beta-coronavirus HKU1 e OC43 34 settimane dopo la prima infezione.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: “Una volta che una persona sconfigge il virus, le particelle virali tendono a permanere un po' di tempo. Queste non possono causare infezioni, ma possono far risultare un test ancora positivo.” [da STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later.
+[^monkeys]: Da [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Avvertenza: Questo articolo è una prestampa e non è stato certificato da esperti (ancora).* Inoltre, per enfatizzare: hanno solo testato la re-infezione 28 giorni dopo.
 
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <span class="nowrap"><icon r></icon>**,</span> exponentially decaying into susceptible, no-immunity <span class="nowrap"><icon s></icon>s</span> after 1 year, on *average*, with variation:
+Per queste simulazioni, diciamo che dura 1 anno.
+**Questa è una simulazione che inizia 100% <span class="nowrap"><icon r></icon>**,</span> con decadimento esponenziale in suscettibili, no immunità <span class="nowrap"><icon s></icon>s</span> dopo 1 anno, in *media*, con variabilità:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+Il ritorno del decadimento esponenziale!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+Questo è il **Modello SEIRS**. L'ultima "S" sta per <icon s></icon> Suscettibile, di nuovo.
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+Ora, simuliamo una epidemia COVID-19, in 10 anni, con nessun intervento... *se l'immunità dura solo un anno:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+Nella simulazione precedente, avevamo solo *un* picco di saturazione di terapie intensive. Ora, ne abbiamo molte ed i casi <icon i></icon> portano *continuamente* le unità di terapia intensiva alla saturazione. (Che, ricordate, abbiamo *triplicato* per queste simulazioni)
 
-R = 1, it's **endemic.**
+R = 1, è **endemica.**
 
-Thankfully, because summer reduces R, it'll make the situation better:
+Fortunatamente, dato che l'estate riduce R, la situazione migliorerà:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
@@ -799,57 +799,57 @@ Thankfully, because summer reduces R, it'll make the situation better:
 
 Oh.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <span class="nowrap"><icon i></icon>s,</span> but that in turn reduces new immune <span class="nowrap"><icon r></icon>s.</span> Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+Al contrario di quanto si pensi, l'estate rende i picchi peggiori *e* regolari! Questo perchè l'estate riducei i nuovi <span class="nowrap"><icon i></icon>s,</span> che di conseguenza riduce i nuovi <span class="nowrap"><icon r></icon></span> immuni. Questo significa che l'immunità precipita in estate, *creando* larghi picchi regolari in inverno.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+Fortunatamente, la soluzione è abbastanza diretta - basta vaccinare le persone ogni autunno/inverno, come facciamo per l'influenza:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+**(Dopo aver eseguito la simulazione, prova a simulare le vostre campagne di vaccinazione! Ricorda che puoi interrompere/riavviare la simulazione in qualsiasi momento)**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-But here's the scarier question:
+Ma ecco la domanda più terrificante:
 
-What if there's no vaccine for *years*? Or *ever?*
+Che succede se non ci sarà un vaccino per *anni*? Oppure *mai*?
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment.
+**Siamo chiari: questo è improbabile.** Molti epidemiologi si aspettano un vaccino tra 1 o 2 anni. E' vero che non esiste un vaccino per nessun altro coronavirus ma questo perchè la SARS è stata estinta velocemente e per "la" influenza non è mai valsa la pena investire.
 
-Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+Comunque, i ricercatori di malattie infettive hanno espresso qualche preoccupazione: E se non riusciamo a farne abbastanza?[^vax_enough] E se ci affrettiamo e non è sicuro?[^vax_safe]
 
-[^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
+[^vax_enough]: “Se arriverà un vaccino per il coronavirus, riuscirà il mondo a produrne abbastanza?” [by Roxanne Khamsi, su Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “Non affrettatevi a sviluppare medicine e vaccini per il COVID-19 senza garanzie di sicurezza sufficienti” [by Shibo Jiang, su Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
-Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
+Anche nel terribile scenario "nessun-vaccino", abbiamo ancora 3 vie di uscita. Dalla più alla meno terribile:
 
-1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
+1) Fare interventi R < 1 intermittenti o leggeri, per raggiungere la "immunità di gregge naturale". (Attenzione: questo causerà molte morti e polmoni danneggiati. *E* non funzionerà se l'immunità non dura.)
 
-2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+2) Fare interventi R < 1 per sempre. Tracciamento dei contatti e indossare mascherine diventeranno la nuova normalità nel mondo post COVID-19, come i test HIV ed usare preservativi è diventato normale nel mondo post-HIV.
 
-3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
+3) Fare interventi R < 1 finchè non svilupperemo trattamenti che ridurranno di molto il ricorrere a terapie intensive per il COVID-19. (Che dovremmo farlo *comunque!*) Ridurre l'uso delle terapie intensive di 10 volte è come incrementare il numero di terapie intensive di 10 volte:
 
-**Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+**Ecco una simulazione di *nessuna* immunità, *nessun* vaccino, e nessun intervento – solo aumentando lentamente la capacità per sopravvivere ai picchi nel lungo termine:**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-Even under the *worst* worst-case scenario... life perseveres.
+Anche nel *peggiore* peggiore scenario... la vita va avanti.
 
 <p>. . .</p>
 
-Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
+Forse vorresti sfidare le nostre ipotesi e provare diversi numeri di R<sub>0</sub>. Altrimenti prova a simulare la *tua* combinazione di piani di intervento!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+**Ecco una modalità di prova (opzionale), con *tutto* a disposizione. (scorri per vedere tutte le opzioni) Simula e divertiti con quello che ti pare:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
-This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
+Questo semplice "simulatore di volo epidemiologico" ci ha insegnato così tanto. Ci ha permesso di rispondere alle domande dei mesi passati, dei prossimi mesi e prossimi anni.
 
-So finally, let's return to...
+Quindi finalmente, torniamo a...
 
 <!-- NUOVO CAPITOLO - Adesso -->
 
